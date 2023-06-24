@@ -100,8 +100,122 @@ label {
 
 /*main*/
 
-.wrap {
-  max-width: 1170px;
+body {
+  background-color: #F4F5FC;
+}
+
+@font-face {
+  font-family: WorkSans;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Light.woff2") format("woff2"), url("../fonts/WorkSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: WorkSans;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Medium.woff2") format("woff2"), url("../fonts/WorkSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: WorkSans;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2"), url("../fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PT Sans;
+  font-display: swap;
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 665px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-title {
+  display: flex;
+  justify-content: right;
+  max-width: 137.2px;
+  width: 100%;
+  background-color: #5A61ED;
+  color: #ffffff;
+}
+
+.title {
+  align-self: flex-end;
+  justify-content: right;
+  transform: rotate(-90deg);
+  color: #FFF;
+  font-size: 49px;
+  font-family: PT Sans;
+  letter-spacing: 0.5px;
+  padding-bottom: 21.98px;
+}
+
+.block-content {
+  box-sizing: border-box;
+  padding: 38.52px 22px 32.48px 20.8px;
+  max-width: 527.8px;
+  width: 100%;
+}
+
+.block-content__title {
+  color: #111;
+  font-size: 22px;
+  font-family: WorkSans;
+  font-weight: 500;
+  letter-spacing: -0.46px;
+}
+
+.block-content__subtitle {
+  color: #111;
+  font-size: 14px;
+  font-family: WorkSans;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__footer-text {
+  color: #000;
+  font-size: 13px;
+  font-family: WorkSans;
+  font-weight: 300;
+}
+
+.form__footer-link {
+  color: #5A61ED;
+  font-size: 13px;
+  font-family: WorkSans;
+  font-weight: 300;
+  text-decoration: underline !important;
+}
+
+.form__footer-button {
+  border: 0.5px solid #FFF;
+  background: #5A61ED;
+  color: #FFF;
+  font-size: 14px;
+  font-family: PT Sans;
+  max-width: 154px;
+  width: 100%;
+  line-height: 32px;
+  flex-shrink: 0;
 }
